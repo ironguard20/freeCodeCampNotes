@@ -61,3 +61,81 @@ cyan	hsl(180, 100%, 50%)
 blue	hsl(240, 100%, 50%)
 magenta	hsl(300, 100%, 50%)
 
+< AVD: Create a Gradual CSS Linear Gradient >
+Applying a color on HTML elements is not limited to one flat hue. CSS provides the ability to use color transitions, otherwise known as gradients, on elements. This is accessed through the background property's linear-gradient() function. Here is the general syntax:
+
+background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...);
+
+The first argument specifies the direction from which color transition starts - it can be stated as a degree, where 90deg makes a vertical gradient and 45deg is angled like a backslash. The following arguments specify the order of colors used in the gradient.
+
+Example:
+
+background: linear-gradient(90deg, red, yellow, rgb(204, 204, 255));
+
+<AVD: Use a CSS Linear Gradient to Create a Striped Element >
+
+The repeating-linear-gradient() function is very similar to linear-gradient() with the major difference that it repeats the specified gradient pattern. repeating-linear-gradient() accepts a variety of values, but for simplicity, you'll work with an angle value and color stop values in this challenge.
+
+The angle value is the direction of the gradient. Color stops are like width values that mark where a transition takes place, and are given with a percentage or a number of pixels.
+
+In the example demonstrated in the code editor, the gradient starts with the color yellow at 0 pixels which blends into the second color blue at 40 pixels away from the start. Since the next color stop is also at 40 pixels, the gradient immediately changes to the third color green, which itself blends into the fourth color value red as that is 80 pixels away from the beginning of the gradient.
+
+For this example, it helps to think about the color stops as pairs where every two colors blend together.
+
+0px [yellow -- blend -- blue] 40px [green -- blend -- red] 80px
+
+If every two color stop values are the same color, the blending isn't noticeable because it's between the same color, followed by a hard transition to the next color, so you end up with stripes.
+
+< AVD: Use the CSS Transform scale Property to Change the Size of an Element >
+
+To change the scale of an element, CSS has the transform property, along with its scale() function. The following code example doubles the size of all the paragraph elements on the page:
+
+p {
+  transform:scale(2);
+}
+
+< AVD: Use the CSS Transform scale Property to Scale an Element on Hover >
+
+The transform property has a variety of functions that lets you scale, move, rotate, skew, etc., your elements. When used with pseudo-classes such as :hover that specify a certain state of an element, the transform property can easily add interactivity to your elements.
+
+Here's an example to scale the paragraph elements to 2.1 times their original size when a user hovers over them:
+
+p:hover {
+  transform: scale(2.1);
+}
+
+< AVD: Create a Graphic Using CSS >
+
+By manipulating different selectors and properties, you can make interesting shapes. One of the easier ones to try is a crescent moon shape. For this challenge you need to work with the box-shadow property that sets the shadow of an element, along with the border-radius property that controls the roundness of the element's corners.
+
+You will create a round, transparent object with a crisp shadow that is slightly offset to the side - the shadow is actually going to be the moon shape you see.
+
+In order to create a round object, the border-radius property should be set to a value of 50%.
+
+You may recall from an earlier challenge that the box-shadow property takes values for offset-x, offset-y, blur-radius, spread-radius and a color value in that order. The blur-radius and spread-radius values are optional.
+
+< AVD: Learn How the CSS @keyframes and animation Properties Work >
+
+To animate an element, you need to know about the animation properties and the @keyframes rule. The animation properties control how the animation should behave and the @keyframes rule controls what happens during that animation. There are eight animation properties in total. This challenge will keep it simple and cover the two most important ones first:
+
+animation-name sets the name of the animation, which is later used by @keyframes to tell CSS which rules go with which animations.
+
+animation-duration sets the length of time for the animation.
+
+@keyframes is how to specify exactly what happens within the animation over the duration. This is done by giving CSS properties for specific "frames" during the animation, with percentages ranging from 0% to 100%. If you compare this to a movie, the CSS properties for 0% is how the element displays in the opening scene. The CSS properties for 100% is how the element appears at the end, right before the credits roll. Then CSS applies the magic to transition the element over the given duration to act out the scene. Here's an example to illustrate the usage of @keyframes and the animation properties:
+
+#anim {
+  animation-name: colorful;
+  animation-duration: 3s;
+}
+@keyframes colorful {
+  0% {
+   background-color: blue;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+For the element with the anim id, the code snippet above sets the animation-name to colorful and sets the animation-duration to 3 seconds. Then the @keyframes rule links to the animation properties with the name colorful. It sets the color to blue at the beginning of the animation (0%) which will transition to yellow by the end of the animation (100%). You aren't limited to only beginning-end transitions, you can set properties for the element for any percentage between 0% and 100%.
+
+< AVD: 
