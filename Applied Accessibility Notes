@@ -1,0 +1,35 @@
+Applied Accessibility Notes, started on 1/17/2018.
+
+Intro: Well, I did it again, I started a little late before applying these notes to this workflow. Fortunately, the applied accessability section is significantly shorter, so I won't be going back far to make a dent in my makeup notes. For now, I'll begin with my current position.
+
+< Applied Accessibility: Wrap Content in the article Element >
+
+article is another one of the new HTML5 elements that adds semantic meaning to your markup. Article is a sectioning element, and is used to wrap independent, self-contained content. The tag works well with blog entries, forum posts, or news articles.
+
+Determining whether content can stand alone is usually a judgement call, but there are a couple simple tests you can use. Ask yourself if you removed all surrounding context, would that content still make sense? Similarly for text, would the content hold up if it were in an RSS feed?
+
+Remember that folks using assistive technologies rely on organized, semantically meaningful markup to better understand your work.
+
+Note about section and div
+The section element is also new with HTML5, and has a slightly different semantic meaning than article. An article is for standalone content, and a section is for grouping thematically related content. They can be used within each other, as needed. For example, if a book is the article, then each chapter is a section. When there's no relationship between groups of content, then use a div.
+
+<div> - groups content
+<section> - groups related content
+<article> - groups independent, self-contained content
+
+< Applied Accessibility: Make Screen Reader Navigation Easier with the header Landmark >
+
+The next HTML5 element that adds semantic meaning and improves accessibility is the header tag. It's used to wrap introductory information or navigation links for its parent tag, and works well around content that's repeated at the top on multiple pages.
+
+header shares the embedded landmark feature you saw with main, allowing assistive technologies to quickly navigate to that content.
+
+Note
+header is meant for use in the body tag of your HTML document. This is different than the head element, which contains the page's title, meta information, etc.
+
+< Applied Accessibility: Make Screen Reader Navigation Easier with the nav Landmark >
+
+The nav element is another HTML5 item with the embedded landmark feature for easy screen reader navigation. This tag is meant to wrap around the main navigation links in your page.
+
+If there are repeated site links at the bottom of the page, it isn't necessary to markup those with a nav tag as well. Using a footer (covered in the next challenge) is sufficient.
+
+< 
