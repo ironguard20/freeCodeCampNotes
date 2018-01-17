@@ -262,3 +262,16 @@ cubic-bezier(0.3, 0.4, 0.5, 1.6);
 
 Notice that the value of y2 is larger than 1. Although the cubic Bezier curve is mapped on an 1 by 1 coordinate system, and it can only accept x values from 0 to 1, the y value can be set to numbers larger than one. This results in a bouncing movement that is ideal for simulating the juggling ball.
 
+< Post writeup, lesson thoughts and opinions >
+
+I've decided I'll do a writeup for each note section I do in FCC. I'll write these notes up the day after I finish the section so that I have time to decompress and can gather my thoughts on the section.
+
+For Applied Visual Design, I like that it rounds out my CSS skills more than the original FCC curriculum. It's pretty heavy around the end as you get into some algebra, once again making me feeling foolish for asking "when will I ever use this?" in high school math. I think the biggest eye openers for me was the variety you can apply to any desgin, and the science that goes behind the design of a well constructed webpage. I think I may have gone through the course a little fast, which might hurt me when I reach the actual projects.
+
+I like how the betas layout makes information feel much more accessibile, which will help a lot once I get to the projects I'm sure. Half the battle seems to be knowing the concept you want to apply, the semantics come with time. I think the reason I failed in my earlier FCC attempt was a lack of purpose as well as not doing things like this. I'm ending this writeup with a greater sense of satisfaction, even if I didn't get into the weeds as far as the courseware was concerned.
+
+
+
+
+
+
